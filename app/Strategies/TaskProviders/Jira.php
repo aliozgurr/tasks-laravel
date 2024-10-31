@@ -10,7 +10,7 @@ class Jira implements TaskProviderInterface
 {
     public function retrieveTasks()
     {
-        return Http::get('https://jsonblob.com/api/jsonBlob/1301320603813142528')->json();
+        return Http::get(config('services.task_providers.jira'))->json();
     }
 
     public function getProviderAdapter(array $data): TaskProviderAdapterInterface

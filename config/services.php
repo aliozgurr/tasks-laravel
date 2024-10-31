@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'task_providers' => [
+        'jira' => 'https://jsonblob.com/api/jsonBlob/1301320603813142528',
+        'trello' => 'https://jsonblob.com/api/jsonBlob/1301321241334767616',
+    ]
+
 ];

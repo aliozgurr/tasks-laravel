@@ -13,5 +13,5 @@ interface TaskRepositoryInterface
 
     public function getSprintTasks(?int $sprintId, ?int $developerId): Collection;
 
-    public function getLatestFinishingTask(): Task;
+    public function getLatestFinishingTask(): ?Task;
 }

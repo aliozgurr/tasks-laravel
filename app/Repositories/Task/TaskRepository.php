@@ -33,7 +33,7 @@ class TaskRepository implements TaskRepositoryInterface
             ->get();
     }
 
-    public function getLatestFinishingTask(): Task
+    public function getLatestFinishingTask(): ?Task
     {
         return Task::query()
             ->whereNotNull('estimated_completion_date')

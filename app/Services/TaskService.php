@@ -27,7 +27,7 @@ class TaskService
         return $this->taskRepository->getSprintTasks($sprintId, $developerId);
     }
 
-    public function getLatestFinishingTask(): Task
+    public function getLatestFinishingTask(): ?Task
     {
         return $this->taskRepository->getLatestFinishingTask();
     }

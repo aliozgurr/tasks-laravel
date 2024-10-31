@@ -11,7 +11,7 @@ class Trello implements TaskProviderInterface
 
     public function retrieveTasks()
     {
-        return Http::get('https://jsonblob.com/api/jsonBlob/1301321241334767616')->json();
+        return Http::get(config('services.task_providers.trello'))->json();
     }
 
     public function getProviderAdapter(array $data): TaskProviderAdapterInterface
